@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#160b0d">
+<title>Estatuto Geral da Guarda Rubra</title>
+<style>
+:root{
+  --bg:#10090b;--panel:#1b1013;--panel2:#241316;--red:#a91f2b;--red2:#d3484d;
+  --gold:#c6a56b;--text:#eee7df;--muted:#b9aaa5;--line:#543037;--ink:#180d0f;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#321217 0,#160b0e 42%,#0d0809 100%);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.7}
+a{color:var(--gold);text-decoration:none}
+a:hover{color:#f0d5a1}
+header{border-bottom:1px solid var(--line);background:rgba(12,7,8,.86)}
+.topline{height:5px;background:linear-gradient(90deg,#4d0d14,var(--red),var(--gold),var(--red),#4d0d14)}
+.wrap{width:min(1100px,92%);margin:auto}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0}
+.brand{display:flex;align-items:center;gap:12px;font-weight:bold;letter-spacing:.13em;text-transform:uppercase;font-size:.9rem}
+.sig{width:42px;height:48px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);clip-path:polygon(50% 0,94% 15%,88% 72%,50% 100%,12% 72%,6% 15%);background:linear-gradient(135deg,#60121b,#1a0b0e);font-size:1.35rem}
+.nav small{color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+.hero{text-align:center;padding:70px 0 42px}
+.kicker{color:var(--gold);letter-spacing:.25em;text-transform:uppercase;font-size:.74rem}
+h1{font-size:clamp(2.2rem,6vw,4.6rem);line-height:1.05;letter-spacing:.035em;text-transform:uppercase;margin:16px 0;color:#fff4e9}
+.subtitle{color:var(--muted);font-style:italic;font-size:1.05rem}
+.rule{width:150px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:25px auto}
+.stats{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}
+.stats strong{color:var(--red2);font-size:1.05rem}
+.epigraph{max-width:720px;margin:34px auto 0;padding:20px 25px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:1.2rem;font-style:italic;color:#f0dfd2}
+.epigraph span{display:block;color:var(--gold);font-size:.7rem;font-style:normal;text-transform:uppercase;letter-spacing:.2em;margin-top:8px}
+main{display:grid;grid-template-columns:260px minmax(0,1fr);gap:32px;padding:26px 0 80px;align-items:start}
+aside{position:sticky;top:16px;background:rgba(27,16,19,.85);border:1px solid var(--line);padding:20px;border-top:3px solid var(--red)}
+aside h2{font-size:.85rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);margin:0 0 14px}
+#search{width:100%;background:#10090b;border:1px solid var(--line);padding:11px 12px;color:var(--text);font:inherit;font-size:.9rem;outline:none;margin-bottom:14px}
+#search:focus{border-color:var(--gold)}
+nav ul{list-style:none;margin:0;padding:0}
+nav li{border-bottom:1px solid rgba(84,48,55,.55)}
+nav a{display:block;padding:9px 0;font-size:.91rem;color:#d5c8c0}
+nav a:hover{padding-left:5px;color:var(--red2)}
+.notice{font-size:.82rem;color:var(--muted);margin-top:18px}
+article{min-width:0}
+section{scroll-margin-top:20px;background:rgba(27,16,19,.72);border:1px solid var(--line);padding:clamp(20px,4vw,36px);margin-bottom:20px}
+.section-label{color:var(--red2);text-transform:uppercase;letter-spacing:.18em;font-size:.7rem;font-weight:bold}
+h2{font-size:1.65rem;line-height:1.25;margin:5px 0 20px;color:#fff1e6}
+h3{font-size:1.08rem;color:var(--gold);margin:25px 0 8px}
+p{margin:0 0 14px}
+p:last-child{margin-bottom:0}
+.article{padding:15px 0;border-top:1px solid rgba(84,48,55,.6)}
+.article h3{margin:0 0 6px}
+.article p{color:#d7cbc4}
+.dropcap:first-letter{float:left;font-size:2.5rem;line-height:.9;padding:5px 8px 0 0;color:var(--red2)}
+.oath{font-size:1.14rem;font-style:italic;text-align:center;padding:22px;border:1px solid var(--gold);background:rgba(80,13,21,.22)}
+footer{border-top:1px solid var(--line);padding:30px 0 40px;text-align:center;color:var(--muted);font-size:.82rem}
+footer strong{display:block;color:var(--gold);letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px}
+.hidden{display:none!important}
+@media(max-width:780px){main{grid-template-columns:1fr}aside{position:static}.nav small{display:none}.hero{padding-top:48px}}
+@media print{body{background:white;color:#111}header,aside,footer{display:none}main{display:block}.hero{padding:20px}.hero h1,.subtitle,h2,h3,p,.article p{color:#111}section{background:white;border:1px solid #aaa;break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header><div class="wrap nav">
+  <div class="brand"><div class="sig">⚔</div><div>Guarda Rubra<br><small style="color:var(--muted);font-weight:normal;letter-spacing:.08em">Ordem de Hendal Root</small></div></div>
+  <small>Estatuto · Honra · Dever</small>
+</div></header>
+<div class="wrap">
+  <div class="hero">
+    <div class="kicker">Carta de autoridade, honra, hierarquia e dever</div>
+    <h1>Estatuto Geral<br>da Guarda Rubra</h1>
+    <div class="subtitle">Sob a autoridade de Hendal Root</div>
+    <div class="rule"></div>
+    <div class="stats"><span><strong>8</strong> títulos</span><span><strong>24</strong> artigos</span><span>Ordem militar</span></div>
+    <div class="epigraph">“O vermelho não é ornamento: é o preço do juramento, a marca do dever e a lembrança de que toda lâmina responde por seus atos.”<span>Epígrafe da Guarda Rubra</span></div>
+  </div>
+  <main>
+    <aside>
+      <h2>Índice do Estatuto</h2>
+      <input id="search" type="search" placeholder="Buscar nos artigos..." aria-label="Buscar nos artigos">
+      <nav><ul id="index">
+        <li><a href="#preambulo">Preâmbulo</a></li>
+        <li><a href="#titulo-i">I — Dos princípios</a></li>
+        <li><a href="#titulo-ii">II — Da autoridade</a></li>
+        <li><a href="#titulo-iii">III — Da hierarquia</a></li>
+        <li><a href="#titulo-iv">IV — Dos deveres</a></li>
+        <li><a href="#titulo-v">V — Da disciplina</a></li>
+        <li><a href="#titulo-vi">VI — Das campanhas</a></li>
+        <li><a href="#titulo-vii">VII — Dos membros</a></li>
+        <li><a href="#titulo-viii">VIII — Das disposições finais</a></li>
+        <li><a href="#juramento">Juramento da Guarda</a></li>
+      </ul></nav>
+      <p class="notice">Documento institucional de roleplay. As disposições devem respeitar as regras do servidor e as decisões da administração.</p>
+    </aside>
+    <article id="document">
+      <section id="preambulo" data-searchable>
+        <div class="section-label">Abertura solene</div><h2>Preâmbulo</h2>
+        <p class="dropcap">Em nome da Guarda Rubra, reunida sob o estandarte vermelho e sob a autoridade de Hendal Root, promulga-se o presente Estatuto para estabelecer os princípios, a organização, os deveres e a disciplina daqueles que escolhem servir em suas fileiras.</p>
+        <p>A Guarda Rubra não será definida somente pelas armas que empunha ou pela cor que ostenta. Sua reputação será construída pela firmeza de seus juramentos, pela lealdade demonstrada em tempos de paz e de guerra, e pela responsabilidade com que cada integrante representa seus irmãos.</p>
+        <p>Todo membro deverá compreender que pertencer à Guarda é assumir uma obrigação perante a ordem, seus superiores e seus companheiros. Nenhum título dispensará alguém da disciplina; nenhuma vitória justificará a desonra; nenhuma ambição individual estará acima da unidade da companhia.</p>
+        <p>Este Estatuto constitui a base de sua organização interna, sem se sobrepor às leis do reino, às regras do servidor ou à autoridade legítima reconhecida no roleplay.</p>
+      </section>
+      <section id="titulo-i" data-searchable>
+        <div class="section-label">Título I</div><h2>Dos princípios e da identidade</h2>
+        <div class="article"><h3>Artigo 1º — Da finalidade</h3><p>A Guarda Rubra é uma formação militar organizada para servir em campanhas, proteger seus integrantes e cumprir as missões que lhe forem legitimamente confiadas.</p></div>
+        <div class="article"><h3>Artigo 2º — Dos princípios</h3><p>São princípios fundamentais da Guarda: lealdade, coragem, disciplina, respeito à hierarquia, responsabilidade e união entre seus membros.</p></div>
+        <div class="article"><h3>Artigo 3º — Do estandarte</h3><p>O vermelho representa o compromisso assumido por cada integrante; o aço representa a firmeza; e o estandarte representa a reputação coletiva, que nenhum membro deverá manchar por interesse próprio.</p></div>
+      </section>
+      <section id="titulo-ii" data-searchable>
+        <div class="section-label">Título II</div><h2>Da autoridade e do comando</h2>
+        <div class="article"><h3>Artigo 4º — Da autoridade suprema</h3><p>Hendal Root exerce a autoridade superior da Guarda Rubra, cabendo-lhe orientar sua finalidade, reconhecer seus oficiais e estabelecer diretrizes gerais de organização.</p></div>
+        <div class="article"><h3>Artigo 5º — Das ordens</h3><p>Ordens legítimas transmitidas pela cadeia de comando deverão ser cumpridas com prontidão. Caso uma ordem seja ambígua, o integrante deverá solicitar esclarecimento sempre que a situação permitir.</p></div>
+        <div class="article"><h3>Artigo 6º — Dos limites do comando</h3><p>Nenhum oficial deverá utilizar seu posto para humilhar, perseguir ou obter vantagem pessoal sobre os subordinados. A autoridade existe para coordenar o serviço e preservar a unidade.</p></div>
+      </section>
+      <section id="titulo-iii" data-searchable>
+        <div class="section-label">Título III</div><h2>Da hierarquia e das funções</h2>
+        <div class="article"><h3>Artigo 7º — Da cadeia hierárquica</h3><p>A Guarda manterá uma cadeia de comando reconhecida, cujos postos e atribuições serão anunciados oficialmente por sua autoridade superior. Todos os integrantes deverão conhecer seu superior direto.</p></div>
+        <div class="article"><h3>Artigo 8º — Dos oficiais</h3><p>Os oficiais deverão organizar seus homens, transmitir ordens com clareza, manter a disciplina e prestar contas de suas decisões ao comando superior.</p></div>
+        <div class="article"><h3>Artigo 9º — Dos capitães e responsáveis por destacamentos</h3><p>Aos responsáveis por grupos ou destacamentos compete conduzir seus integrantes, verificar sua presença, zelar pelo equipamento e informar ao comando qualquer ocorrência relevante.</p></div>
+        <div class="article"><h3>Artigo 10º — Dos soldados</h3><p>Todo soldado deverá conhecer suas responsabilidades, respeitar os superiores, cooperar com seus companheiros e manter conduta compatível com o nome da Guarda.</p></div>
+      </section>
+      <section id="titulo-iv" data-searchable>
+        <div class="section-label">Título IV</div><h2>Dos deveres e da conduta</h2>
+        <div class="article"><h3>Artigo 11º — Da lealdade</h3><p>O integrante deverá agir em favor da unidade da Guarda e não poderá utilizar informações, recursos ou autoridade recebidos em serviço para prejudicá-la deliberadamente.</p></div>
+        <div class="article"><h3>Artigo 12º — Do respeito</h3><p>É dever de todo membro tratar aliados, subordinados, superiores e demais participantes do roleplay com respeito, distinguindo conflitos entre personagens de ataques pessoais fora do jogo.</p></div>
+        <div class="article"><h3>Artigo 13º — Da discrição</h3><p>Informações sobre planos, deslocamentos e operações deverão ser compartilhadas apenas com quem precise conhecê-las, respeitadas as regras do servidor e a experiência de jogo dos demais.</p></div>
+      </section>
+      <section id="titulo-v" data-searchable>
+        <div class="section-label">Título V</div><h2>Da disciplina e das sanções</h2>
+        <div class="article"><h3>Artigo 14º — Das infrações</h3><p>Constituem infrações internas a desobediência injustificada, o abandono deliberado de posto, o abuso de autoridade, a divulgação indevida de informações e a conduta que prejudique a unidade.</p></div>
+        <div class="article"><h3>Artigo 15º — Da apuração</h3><p>Antes de uma sanção relevante, o integrante deverá ter oportunidade razoável de explicar os fatos. A decisão deverá considerar a gravidade, as circunstâncias e a reincidência.</p></div>
+        <div class="article"><h3>Artigo 16º — Das sanções</h3><p>Conforme a gravidade, poderão ser aplicadas advertência, perda temporária de função, afastamento de atividade ou expulsão da Guarda. Medidas administrativas do servidor permanecem sob competência da administração.</p></div>
+      </section>
+      <section id="titulo-vi" data-searchable>
+        <div class="section-label">Título VI</div><h2>Das campanhas e operações</h2>
+        <div class="article"><h3>Artigo 17º — Da preparação</h3><p>Antes de uma operação, os responsáveis deverão, quando possível, informar objetivo, ponto de encontro, cadeia de comando e instruções essenciais aos participantes.</p></div>
+        <div class="article"><h3>Artigo 18º — Da atuação em campo</h3><p>Durante campanhas, os integrantes deverão manter coesão, seguir a liderança designada e evitar ações individuais que coloquem desnecessariamente o destacamento em risco.</p></div>
+        <div class="article"><h3>Artigo 19º — Dos aliados</h3><p>A cooperação com outras forças dependerá de autorização do comando. Acordos temporários não transferem automaticamente a autoridade sobre os membros da Guarda Rubra.</p></div>
+      </section>
+      <section id="titulo-vii" data-searchable>
+        <div class="section-label">Título VII</div><h2>Do ingresso, promoção e afastamento</h2>
+        <div class="article"><h3>Artigo 20º — Do ingresso</h3><p>O ingresso dependerá de aceitação pelo comando ou por pessoa expressamente autorizada, bem como do compromisso do candidato de respeitar este Estatuto.</p></div>
+        <div class="article"><h3>Artigo 21º — Das promoções</h3><p>Promoções deverão considerar mérito, confiabilidade, atividade, capacidade de liderança e respeito aos princípios da Guarda. Antiguidade, isoladamente, não garante promoção.</p></div>
+        <div class="article"><h3>Artigo 22º — Do afastamento</h3><p>O membro que precisar se afastar deverá, sempre que possível, comunicar seu superior. A ausência prolongada poderá motivar revisão de sua função, sem impedir seu retorno conforme as regras internas.</p></div>
+      </section>
+      <section id="titulo-viii" data-searchable>
+        <div class="section-label">Título VIII</div><h2>Das disposições finais</h2>
+        <div class="article"><h3>Artigo 23º — Da interpretação</h3><p>Questões não previstas neste documento serão decididas pelo comando da Guarda, respeitando a hierarquia, a coerência do roleplay e as regras gerais do servidor.</p></div>
+        <div class="article"><h3>Artigo 24º — Das alterações</h3><p>Este Estatuto poderá ser revisto pela autoridade competente. Toda alteração deverá ser comunicada aos integrantes e passará a valer após sua publicação oficial.</p></div>
+      </section>
+      <section id="juramento" data-searchable>
+        <div class="section-label">Disposição solene</div><h2>Juramento da Guarda Rubra</h2>
+        <p class="oath">“Pelo vermelho que carrego e pelo aço que empunho, juro honrar meu estandarte, respeitar meus irmãos e cumprir meu dever. Não buscarei glória à custa da Guarda, nem colocarei minha ambição acima de seu juramento. Enquanto eu permanecer em suas fileiras, minha conduta dará força ao nome que carrego.”</p>
+        <p style="text-align:center;margin-top:24px;color:var(--muted)">Promulgado sob a autoridade de <strong style="color:var(--gold)">Hendal Root</strong>, comandante da Guarda Rubra.</p>
+      </section>
+    </article>
+  </main>
+</div>
+<footer><div class="wrap"><strong>Guarda Rubra</strong>Estatuto Geral · Documento institucional de roleplay<br>Que o juramento seja mais forte que a ambição.</div></footer>
+<script>
+const search = document.getElementById('search');
+const sections = [...document.querySelectorAll('[data-searchable]')];
+search.addEventListener('input', () => {
+  const q = search.value.trim().toLocaleLowerCase('pt-BR');
+  sections.forEach(section => {
+    section.classList.toggle('hidden', q && !section.innerText.toLocaleLowerCase('pt-BR').includes(q));
+  });
+  document.querySelectorAll('#index a').forEach(link => {
+    const target = document.querySelector(link.getAttribute('href'));
+    link.parentElement.classList.toggle('hidden', !!q && (!target || target.classList.contains('hidden')));
+  });
+});
+</script>
+</body>
+</html>
